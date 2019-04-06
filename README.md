@@ -41,7 +41,23 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
 - 4.3) **[Android]** If you haven't already got an android device attached/emulator running then you'll need to get one running (make sure the emulator is with Google Play / APIs). When ready run `npm run android` or `yarn run android` from the root of your project.
 
 If all has gone well you'll see an initial screen like the one below.
+
   
 ## Screenshots
 
 ![preview](https://i.imgur.com/4lG4HuS.png)
+
+
+#### 5) Problems
+
+- `Could not find iPhone 6 simulator` fix:
+
+`cd node_modules/react-native/local-cli/runIos/` and open 'findMatchingSimulator.js' then delete these lines
+
+```javascript
+    if (!version.startsWith('iOS') && !version.startsWith('tvOS')) {
+      continue;
+    }
+```
+
+- `Print: Entry, ":CFBundleIdentifier", Does Not Exist` or `config.h file not found` fix is [here](https://github.com/facebook/react-native/issues/19529)
