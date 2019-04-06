@@ -60,4 +60,4 @@ If all has gone well you'll see an initial screen like the one below.
     }
 ```
 
-- `Print: Entry, ":CFBundleIdentifier", Does Not Exist` or `config.h file not found` fix is [here](https://github.com/facebook/react-native/issues/19529)
+- `Print: Entry, ":CFBundleIdentifier", Does Not Exist` or `config.h file not found` fix is [here](https://github.com/facebook/react-native/issues/19529#issuecomment-423898864)
